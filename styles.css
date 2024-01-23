@@ -1,0 +1,67 @@
+/* -- Imports -- */
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400&display=swap');
+
+:root {
+    --black-color: #131313;
+    --text-color: #bbbbbb;
+    --green: #40cf8e;
+}
+
+body {
+    background-color: var(--black-color);
+    color: var(--text-color);
+    font-weight: 300;
+    letter-spacing: 1px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main, footer, header {
+    margin-left: 350px;
+    margin-right: 350px;
+
+}
+
+nav {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
+    margin: auto;
+    padding-top: 15px;
+}
+
+.nav-content a {
+    color: var(--text-color);
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.nav-content a:hover {
+    color: white;
+}
+
+.brief-about {
+    position: relative;
+    display: flex;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: IBM Plex Sans, sans-serif;
+}
+
+span.white {
+    color: white;
+}
+span.green {
+    color: var(--green);
+}
+span.greeting {
+    color: var(--green)
+}
