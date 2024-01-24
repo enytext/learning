@@ -9,18 +9,25 @@
     --green: #40cf8e;
 }
 
+::selection {
+    color: var(--black-color);
+    background: var(--green);
+}
+
 body {
     background-color: var(--black-color);
     color: var(--text-color);
     font-weight: 300;
     letter-spacing: 1px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    transition: all .2s ease;
 }
 
-main, footer, header {
-    margin-left: 350px;
-    margin-right: 350px;
-
+main {
+    margin: auto;
+    max-width: 1300px;
+    padding: 25px;
 }
 
 nav {
@@ -64,4 +71,26 @@ span.green {
 }
 span.greeting {
     color: var(--green)
+}
+
+.projects-container span {
+    box-sizing: border-box;
+    border: 1px solid #9c929285;
+    padding: 5px;
+    background-color: rgb(27, 23, 23);
+    border-radius: 3px;
+    cursor: default
+}
+.projects-container span:hover {
+    color: var(--green);
+}
+
+hr {
+    width: auto;
+    max-width: 1300px;
+}
+.copyrights {
+    margin: auto;
+    max-width: 1300px;
+    font-size: 15px;
 }
